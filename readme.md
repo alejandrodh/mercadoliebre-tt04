@@ -1,4 +1,4 @@
-##Pasos para clonar un proyecto
+## Pasos para clonar un proyecto
 1. Descargar el repositorio.
 2. Por consola ingresar a la carpeta del repositorio.
 3. Ejecutar `composer install` para que composer descargue todas las carpetas y paquetes necesarios para correr Laravel.
@@ -12,7 +12,7 @@
 
 
 
-##Pasos para iniciar un proyecto.
+## Pasos para iniciar un proyecto.
 ### Backend
 1. Descargar laravel.
 2. Crear la base de datos.
@@ -32,7 +32,7 @@ Ver: https://laravel-news.com/laravel-5-4-key-too-long-error
 12. Desarrollar lógica de controladores.
 13. Tener en cuenta al armar el método `store()` de un controlador que en el *Modelo* esté permitida la escritura masiva de datos.
 
-###Frontend (Blade)
+### Frontend (Blade)
 //ToDo.
 
 
