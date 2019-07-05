@@ -25,7 +25,8 @@
 > [Illuminate\Database\QueryException]
 SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes.
 
-Ver: https://laravel-news.com/laravel-5-4-key-too-long-error
+Ver: https://laravel-news.com/laravel-5-4-key-too-long-error  
+
 9. Completar los archivos de migraciones con los campos que necesitan las tablas de las bases de datos.
 10. Crear factories para rellenar las tablas que lo requieran.
 11. Correr seeders para ejecutar las factories del punto anterior.
