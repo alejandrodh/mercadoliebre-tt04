@@ -12,10 +12,15 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($category = null)
     {
+      if($category){
+        $products = Product::all()->where('category', $category);
+        return view('products', compact('products'));
+      } else {
       $products = Product::all(); //Traemos todos los productos.
       return view('products', compact('products')); //Pasamos el array a la vista.
+      }
     }
 
     /**

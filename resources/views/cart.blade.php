@@ -9,15 +9,20 @@
     <section>
       <article>
         <ul>
-          @foreach ($carts as $item)
+          @forelse ($carts as $item)
               <li>Nombre: {{$item->name}} | Cantidad: {{$item->quantity}} | Precio: {{$item->price}} | sub-total: {{$item->price * $item->quantity}} <a href="/delete/{{$item->id}}">Eliminar</a></li>
-          @endforeach
+          @empty
+            <p>Su carrito está vacío.</p>
+          @endforelse
         </ul>
       </article>
       <p>Total: {{$total}}</p>
       {{-- <p>Total2: {{$total2}}</p> --}}
     </section>
-
+    <form class="" action="/cartclose" method="post">
+      @csrf
+      <button type="submit"> Comprar </button>
+    </form>
 
   </body>
 </html>

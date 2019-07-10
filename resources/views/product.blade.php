@@ -15,6 +15,7 @@
         <form class="" action="/addtocart" method="post">
           @csrf
           <input type="number" name="quantity" value="" placeholder="Cantidad">
+          {{$errors->first('quantity')}}
           <input type="hidden" name="id" value="{{$product->id}}">
           <p></p>
           <button type="submit">Agregar al carrito</button>
